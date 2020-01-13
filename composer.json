@@ -1,5 +1,5 @@
 {
-    "name": "brito/dynamodb-message-repository",
+    "name": "tiagobrito/dynamodb-message-repository",
     "description": "DynamoDb Message Repository for EventSauce",
     "type": "library",
     "autoload": {
