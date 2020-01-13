@@ -7,11 +7,22 @@ This implementation as all the features similar to
 (official supported by [EventSauce](https://eventsauce.io/)) but for AWS DynamoDB.
 
 ### Usage:
+```php
+<?php
 
-#### Symfony
+namespace App\Repository;
+
+use Brito\DynamoDbMessageRepository;
+
+class MyCustomRepository extends DynamoDbMessageRepository {
+
+}
+
+```
+#### Register your Repository (Symfony)
 
 ```yaml
-    Brito\DynamoDbMessageRepository:
+    App\Repository\MyCustomRepository:
         arguments:
             - '@aws.dynamodb'
             - '@EventSauce\EventSourcing\Serialization\ConstructingMessageSerializer'
