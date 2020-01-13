@@ -5,6 +5,6 @@
 
 
 ```bash
-$ docker-compose up
+$ cd tests && docker-compose up
 
 $ phpunit tests/
